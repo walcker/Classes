@@ -3,10 +3,13 @@ package classejava;
 public class Main {
 
     public static void main(String[] args) {
-	    Usuario user = new Usuario();
-        user.nome = "Walcker";
-        user.sobrenome = "Gomes";
+	    Usuario cynara = new Usuario("Cynara", "Grilo");//Contrutor com parâmetros
 
-        System.out.println(user.nome + " " + user.sobrenome);
+        Usuario walcker = new Usuario();//Construtor sem parâmetros
+        walcker.nome = "Walcker";
+        walcker.sobrenome = "Gomes";
+
+        System.out.println(walcker.nome + " " + walcker.sobrenome);
+        System.out.println(cynara.nome + " " + cynara.sobrenome);
     }
 }
